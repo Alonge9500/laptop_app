@@ -15,7 +15,7 @@ model = joblib.load(modelPath)
 with open(dictPath, 'r') as fp:
     propertydict = json.load(fp)
 st.title('Flikpart Laptop')
-st.header('Input your desire specifications to get an estimated price of your desire laptop')
+st.text('Input your desire specifications to get an estimated price of your desire laptop')
 
 with st.form('loan_form',clear_on_submit=True):
     ram_size = st.selectbox('Input Ram Size',propertydict[0].keys())

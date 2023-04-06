@@ -25,11 +25,11 @@ The Ram SIze, Storage Storage Type and the type Of operating system"""
 
 fig1 = px.box(dataviz, x='Ram Size', y='MRP', title='Ram Size vs Price')
 
-fig4 = px.box(dataviz, x='Storage', y='MRP', title='Storage vs Price')
+fig2 = px.box(dataviz, x='Storage', y='MRP', title='Storage vs Price')
 
-fig5 = px.box(dataviz, x='StorageType', y='MRP', title='StorageType vs Price')
+fig3 = px.box(dataviz, x='StorageType', y='MRP', title='StorageType vs Price')
 
-fig6 = px.box(dataviz, x='OS', y='MRP', title='OS vs Price')
+fig4 = px.box(dataviz, x='OS', y='MRP', title='OS vs Price')
 
 multivariatetext = """
 The above box plots shows the relationships between price and the various columns in the data\n
@@ -46,4 +46,10 @@ st.pyplot(plt3)
 st.markdown(univariatetext)
 
 st.title('MultiVariate Plots')
+st.plotly_chart(fig1, theme=None, use_container_width=True)
+st.plotly_chart(fig2, theme=None, use_container_width=True)
+st.plotly_chart(fig3, theme=None, use_container_width=True)
+st.plotly_chart(fig4, theme=None, use_container_width=True)
+
+
 st.markdown(multivariatetext)
