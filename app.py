@@ -5,6 +5,14 @@ import numpy as np
 import pandas as pd
 import json
     
+    
+st.set_page_config(page_title='Flikpart Laptop', 
+                   page_icon=':smiley:',
+                   initial_sidebar_state="auto",
+                   layout='wide',
+                   menu_items={'About': 'This is a Laptop Price Estimation App!'})
+
+
 RESOURCES_PATH = os.path.join(os.getcwd(), 'resources')
 dictPath = os.path.join(RESOURCES_PATH,'propertydict.json')
 modelPath = os.path.join(RESOURCES_PATH,'model.pkl')
@@ -51,4 +59,5 @@ with st.form('loan_form',clear_on_submit=True):
     
     if submitted:
         prediction = round(np.exp(model.predict(features))[0])
-        st.text(f'₹{prediction}')
+        st.markdown(f'The Estimated Price of the Laptop ₹{prediction}')
+        st.snow()
