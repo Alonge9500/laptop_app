@@ -7,6 +7,7 @@ By *Alonge Daniel*, a Data Scientist, passionate about data and technology.
 - GitHub: [Alonge 9500](https://github.com/Alonge9500)
 - LinkedIn: [Alonge Daniel](https://www.linkedin.com/in/alonge-daniel-27b4b4139/)
 - Email: [Alonge Daniel](mailto:alongedaniel19@gmail.com)
+- Streamlit App[Laptop APP](https://alonge9500-laptop-app-app-x8dzj1.streamlit.app/)
 
 I' will appreciate any comment and correction on this work 
 
